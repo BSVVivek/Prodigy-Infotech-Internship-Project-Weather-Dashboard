@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+/* Color Palette */
+:root {
+  --primary-color: #005f99; /* Blue */
+  --secondary-color: #ff8c00; /* Orange */
+  --tertiary-color: #ffd700; /* Yellow */
+  --quaternary-color: #f0f8ff; /* Light Blue */
+  --quinary-color: #ffffff; /* White */
+  --text-color: #333333; /* Dark Gray */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: var(--quaternary-color); /* Light Blue */
+  color: var(--text-color); /* Dark Gray */
+}
+
+h1 {
+  background: var(--primary-color); /* Blue */
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 20px 0;
+  color: var(--quinary-color); /* White */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 img {
+  width: 80px;
+  height: 80px;
+  margin-left: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+}
+
+.weather-input {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.weather-input h3 {
+  flex: 1;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.weather-input input {
+  flex: 2;
+  height: 46px;
+  outline: none;
+  font-size: 1rem;
+  padding: 0 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color); /* Blue */
+}
+
+.weather-input input:focus {
+  border: 2px solid var(--secondary-color); /* Orange */
+}
+
+.weather-input button {
+  flex: 1;
+  padding: 10px 0;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: var(--quinary-color); /* White */
+  background: var(--secondary-color); /* Orange */
+  transition: background 0.3s ease;
+}
+
+.weather-input .search-btn:hover {
+  background: var(--primary-color); /* Blue */
+}
+
+.weather-input .location-btn {
+  background: var(--tertiary-color); /* Yellow */
+}
+
+.weather-input .location-btn:hover {
+  background: #e6ac00; /* Darker shade of Yellow */
+}
+
+.weather-data {
+  width: 100%;
+  max-width: 800px;
+}
+
+.weather-data .current-weather {
+  color: var(--quinary-color); /* White */
+  background: var(--primary-color); /* Blue */
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.current-weather h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.weather-data h6 {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.current-weather .icon {
+  text-align: center;
+}
+
+.current-weather .icon img {
+  max-width: 100px;
+  margin-top: -10px;
+}
+
+.current-weather .icon h6 {
+  margin-top: -5px;
+  text-transform: capitalize;
+}
+
+.days-forecast h2 {
+  margin: 20px 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.days-forecast .weather-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.weather-cards .card {
+  color: var(--text-color); /* Dark Gray */
+  padding: 15px;
+  list-style: none;
+  width: calc(20% - 20px); /* Adjust width to ensure all five cards fit in one row */
+  background: var(--secondary-color); /* Orange */
+  border-radius: 10px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.weather-cards .card:hover {
+  background: var(--primary-color); /* Blue */
+  color: var(--quinary-color); /* White */
+}
+
+.weather-cards .card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.weather-cards .card img {
+  max-width: 50px;
+  margin: 5px 0;
+}
+
+.weather-cards .card h6 {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+  .weather-cards .card {
+    width: calc(33.33% - 20px); /* Adjust for three cards per row on medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+    padding: 15px 0;
+  }
+
+  .weather-cards .card {
+    width: calc(50% - 20px); /* Adjust for two cards per row on small screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .weather-cards .card {
+    width: 100%; /* Single card per row on very small screens */
+  }
+}

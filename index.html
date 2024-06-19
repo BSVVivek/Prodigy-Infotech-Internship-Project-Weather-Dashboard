@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="weather_img.png">
+  </head>
+  <body>
+    <h1>Weather Dashboard <img src="weather_img.png" alt="Weather Icon"></h1>
+    <div class="container">
+      <div class="weather-input">
+        <h3>Enter a City Name</h3>
+        <input class="city-input" type="text" placeholder="E.g., New York, London, Tokyo">
+        <button class="search-btn">Search</button>
+        <button class="location-btn">Use Current Location</button>
+      </div>
+      <div class="weather-data">
+        <div class="current-weather">
+          <div class="details">
+            <h2>_______ ( ______ )</h2>
+            <h6>Temperature: __°C</h6>
+            <h6>Wind: __ M/S</h6>
+            <h6>Humidity: __%</h6>
+            <h6>Air Pressure: __ hPa</h6>
+          </div>
+          <div class="icon">
+            <img src="https://openweathermap.org/img/wn/01d.png" alt="weather-icon">
+            <h6>Clear Sky</h6>
+          </div>
+        </div>
+        <div class="days-forecast">
+          <h2>5-Day Forecast</h2>
+          <ul class="weather-cards">
+            <li class="card">
+              <h3>( ______ )</h3>
+              <img src="https://openweathermap.org/img/wn/01d.png" alt="weather-icon">
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+              <h6>Air Pressure: __ hPa</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <img src="https://openweathermap.org/img/wn/01d.png" alt="weather-icon">
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+              <h6>Air Pressure: __ hPa</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <img src="https://openweathermap.org/img/wn/01d.png" alt="weather-icon">
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+              <h6>Air Pressure: __ hPa</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <img src="https://openweathermap.org/img/wn/01d.png" alt="weather-icon">
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+              <h6>Air Pressure: __ hPa</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <img src="https://openweathermap.org/img/wn/01d.png" alt="weather-icon">
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+              <h6>Air Pressure: __ hPa</h6>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
